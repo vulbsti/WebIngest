@@ -1,0 +1,23 @@
+{
+  "name": "webingest",
+  "version": "1.0.0",
+  "description": "Web content ingestion and Q&A tool",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "stop:backend": "pkill -f 'ts-node.*server.ts'",
+    "restart:backend": "npm run stop:backend || true && npm run dev:backend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "stop": "npm run stop:backend && pkill -f 'vite'",
+    "build": "cd frontend && npm run build && cd ../backend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
