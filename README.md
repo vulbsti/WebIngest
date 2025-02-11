@@ -20,7 +20,7 @@ The application uses a modern tech stack with several key components:
 - **FAISS Vector Store**: Enables efficient similarity search for relevant content
 - **OpenAI Integration**: 
   - Uses `text-embedding-ada-002` for content vectorization
-  - Uses `gpt-4o-turbo` for generating natural language answers
+  - Uses `gpt-4o-mini` for generating natural language answers
 
 ### Frontend
 - React + TypeScript + Vite for a responsive single-page application
@@ -47,32 +47,27 @@ npm run install:all
    OPENAI_API_KEY=your-api-key-here
    ```
 
+## Build The Application 
+
+1. run `npm run build`
+
+
 ## Running the Application
 
-1. Start the backend server (in one terminal):
-```bash
-npm run dev:backend
-```
-
-2. Start the frontend development server (in another terminal):
-```bash
-npm run dev:frontend
-```
-
-3. Open your browser and navigate to the URL shown in the frontend terminal (typically http://localhost:5173)
-
-## Managing the Application
-
-### Starting the Application
-
-1. **Start both frontend and backend together**:
+1. Start the backend server (in one terminal) navigate to backed directory in terminal and run :
 ```bash
 npm run dev
 ```
 
-2. **Start services individually**:
-   - Backend only: `npm run dev:backend`
-   - Frontend only: `npm run dev:frontend`
+2. Start the frontend development server (in another terminal), navigate to frontend directory in terminal and run:
+```bash
+npm run dev
+```
+
+
+3. Open your browser and navigate to the URL shown in the frontend terminal (typically http://localhost:5173)
+
+## Managing the Application
 
 ### Stopping the Application
 
