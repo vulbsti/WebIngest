@@ -11,9 +11,5 @@
       "src": "/(.*)",
       "dest": "backend/src/server.ts"
     }
-  ],
-  "env": {
-    "OPENAI_API_KEY": "@OPENAI_API_KEY",
-    "NODE_ENV": "production"
-  }
+  ]
 }
