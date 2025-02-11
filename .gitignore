@@ -1,5 +1,5 @@
 # Example .gitignore file
-node_modules/
-.env
-dist/
+frontend/node_modules/
+backend/.env
+frontend/dist/
 *.log
