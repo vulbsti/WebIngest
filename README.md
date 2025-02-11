@@ -20,7 +20,7 @@ The application uses a modern tech stack with several key components:
 - **FAISS Vector Store**: Enables efficient similarity search for relevant content
 - **OpenAI Integration**: 
   - Uses `text-embedding-ada-002` for content vectorization
-  - Uses `gpt-3.5-turbo` for generating natural language answers
+  - Uses `gpt-4o-turbo` for generating natural language answers
 
 ### Frontend
 - React + TypeScript + Vite for a responsive single-page application
@@ -140,7 +140,7 @@ npm run restart:backend
 
 - **Vector Storage**: Uses FAISS for efficient similarity search
 - **Embeddings**: OpenAI's ada-002 model (1536-dimensional vectors)
-- **Answer Generation**: GPT-3.5-turbo with context-aware prompting
+- **Answer Generation**: GPT-4o-mini with context-aware prompting
 - **Persistence**: FAISS index is saved to disk for persistence between restarts
 
 ## Error Handling
